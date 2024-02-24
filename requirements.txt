@@ -1,4 +1,4 @@
-SimpleITK
-scipy
 scikit-image
-cleanlab
+scipy
+pathlib
+PIL

@@ -32,6 +32,59 @@ This repository contains the official implementation of our paper:
 * CUDA = 11.1
 * Install other packages in `requirements.txt`
 
+## Data preparation
+
+The file structure is as follows:
+```shell
+root_path/dataset/
+├── size_img
+├── size_label
+├── train
+├────── images
+├───────── img1.png
+├────── labels
+├───────── img1_scribble.png
+├────── annotations
+├───────── img1_label.png
+├── val
+├────── images
+├───────── img2.png
+├────── labels
+├───────── img2_label.png
+├── TestSet
+├────── images
+├───────── img3.png
+├────── labels
+└───────── img3_label.png
+```
+
+## Run
+
+### Stage1
+* **Training**. 
+    ```shell
+    python train_infer/stage1_main.py --mode 'train' --dataset 'SSVS_XRAY_Coronary'
+    ```
+* **Pseudo label**. 
+    ```shell
+    python train_infer/stage1_main.py --mode 'pseudo' --dataset 'SSVS_XRAY_Coronary'
+    ```
+
+* **Pseudo label Refinement**. 
+    ```shell
+    python train_infer/pseudo_label_refine.py --dataset 'SSVS_XRAY_Coronary'
+    ```
+
+### Stage2
+* **Training**. 
+    ```shell
+    python train_infer/stage2_main.py --mode 'train' --dataset 'SSVS_XRAY_Coronary'
+    ```
+
+* **Inference**. 
+    ```shell
+    python train_infer/stage2_main.py --mode 'infer' --dataset 'SSVS_XRAY_Coronary'
+
 ## Citation
 We hope you find our work useful. If you would like to acknowledge it in your project, please use the following citation:
 ```
