@@ -8,8 +8,7 @@ This repository contains the official implementation of our paper:
 > 
 > Zhanqiang Guo, [Jianjiang Feng](http://ivg.au.tsinghua.edu.cn/~jfeng/), Jie Zhou
 
-> Paper: <!--[TMI2024](https://ieeexplore.ieee.org/abstract/document/10423041)  [ArXiv](https://arxiv.org/abs/2402.12128)-->
-  <!--Project Page: [Website](https://ncdss.github.io)-->
+> Paper: [tsinghua.edu.cn](http://ivg.au.tsinghua.edu.cn/~jfeng/pubs/Guo_ISBI24_VesselScribble.pdf)
 
 > **Abstract:** Accurate segmentation of blood vessels is critical for diagnosing various diseases. However, the complexity of manually labeling vessels impedes the practical adoption of fully supervised methods. To alleviate this challenge, we propose a weakly supervised vessel segmentation framework. Our approach leverages scribble annotation to train the Unet and identifies reliable foreground and background regions. Addressing the issue of insufficient boundary information inherent in scribble annotation, we incorporate a conventional approach specifically designed to leverage the innate structural attributes of vessels for edge detection, subsequently ensuring effective edge supervision. In addition, a bilateral filtering module is introduced to improve edge awareness of network. Furthermore, to augment the quantity of annotated pixels, we employ an image mixing strategy for data augmentation, thereby enhancing the network's segmentation capability. The experimental results on three datasets show that our framework outperforms the existing scribble-based methods.
 <br>
@@ -22,7 +21,7 @@ This repository contains the official implementation of our paper:
 <br>
 
 ## News
-- **[Feb 22 2024]** :bell: Code is coming soon. 
+- **[Feb 25 2024]** :bell: Code is coming. 
   
 
 ## Requirements
